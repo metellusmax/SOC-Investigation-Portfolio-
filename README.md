@@ -1,47 +1,33 @@
-
 # SOC Investigation Portfolio
 
-This repository contains cybersecurity investigations completed through:
-
-- Let's Defend
-- Home Lab Exercises
-- Blue Team Simulations
-- Capture the Flag (CTF) Challenges
+This repository contains cybersecurity investigations completed through Let's Defend and home lab exercises.
 
 ## Skills Demonstrated
 
 - Phishing Analysis
 - Email Header Analysis
 - URL Investigation
-- Malware Triage
-- Incident Response
 - Threat Intelligence
-- Log Analysis
-- SIEM Investigation
+- Incident Response
 - IOC Identification
 
-## Investigation Categories
+## Featured Investigations
 
-| Category | Cases |
-|-----------|---------|
-| Phishing | 6 |
-| Malware | X |
-| Authentication | X |
-| Network Security | X |
+### Phishing Investigations
+
+1. ./Phishing/LD-001-Phishing-Attachment-Investigation
+2. ./Phishing/LD-002-Credential-Harvesting-Investigation
+3. ./Phishing/LD-003-Malicious-URL-Investigation
 
 ## Tools Used
 
 - VirusTotal
 - URLScan
 - AbuseIPDB
-- Hybrid Analysis
-- Any.Run
 - Wireshark
 - Splunk
 - Wazuh
-- Microsoft Sentinel
 
 ## Author
 
 Max Metellus
-
