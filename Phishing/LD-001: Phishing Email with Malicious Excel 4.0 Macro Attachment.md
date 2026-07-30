@@ -1,18 +1,9 @@
 # LD-001: Phishing Email with Malicious Excel 4.0 Macro Attachment
 
-## Alert Overview
+## Alert Details
 
-| Field | Value |
-|---------|---------|
-| Event ID | 93 |
-| Alert Name | SOC146 - Phishing Mail Detected - Excel 4.0 Macros |
-| Severity | High |
-| Investigation Date | Phishing |
-| Event Time | Jun, 13, 2021, 02:13 PM |
-| Status | Closed |
-| Category | Phishing |
+<img width="1493" height="350" alt="image" src="https://github.com/user-attachments/assets/d7de55ab-d61e-4813-8f72-c2790c5d0f79" />
 
----
 
 # Executive Summary
 
@@ -20,7 +11,7 @@ A high-severity phishing alert was generated after user Lars received a suspicio
 attachment that included an Excel 4.0 macro-enabled spreadsheet and two DLL files. Analysis of the attachment identified that the attachment includes an Excel 4.0 macro-enabled spreadsheet and two DLL files.
 Investigation revealed that the user opened the attachment, subsequently accessed suspicious external URLs and the suspicious DLL were ran. Due to the risk of system compromise, Lars' workstation
 was quarantined to prevent further malicious activity while the investigation was conducted. Based on the collected evidence, the alert was classified as a true positive phishing incident.
-Would recommend user awareness training to reduce the risk of future phishing-related incidents.
+Would recommend Security awareness training to reduce the risk of future phishing-related incidents.
 
 
 
@@ -28,18 +19,17 @@ Would recommend user awareness training to reduce the risk of future phishing-re
 
 # Alert Details
 
-| Item | Value |
-|--------|--------|
-| Sender | |
-| Recipient | |
-| Subject | |
-| Device Action | |
-| SMTP IP | |
-| Internal Host | |
+<img width="1493" height="350" alt="image" src="https://github.com/user-attachments/assets/d7de55ab-d61e-4813-8f72-c2790c5d0f79" />
+
 
 ---
 
 # Initial Triage
+
+After claiming the ticket 1st step I looked to find the email in question in LetsDefend Email Security, I found a suspicious attachment. 
+<img width="1575" height="555" alt="image" src="https://github.com/user-attachments/assets/73e1520d-1c56-436d-8778-072db4185b74" />
+The attachment name looks like a MD5 hash. I confirm my suspicion by downloading the file from the email and it was a double zip file. 
+
 
 ## Observations
 
