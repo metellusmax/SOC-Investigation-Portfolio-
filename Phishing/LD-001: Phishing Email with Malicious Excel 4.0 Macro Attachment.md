@@ -68,219 +68,32 @@ With these finding we were able to see Lars system was infected and we needed to
 
 ### PlayBook
 
+When was it sent? Jun, 13, 2021, 02:11 PM
 
+What is the email's SMTP address? 24.213.228.54
 
+What is the sender address? trenton@tritowncomputers.com
 
-| File Name | File Type | SHA256 |
-|------------|------------|------------|
-| | | |
+What is the recipient address? lars@letsdefend.io
 
-### Findings
+Is the mail content suspicious? Yes
 
-Document:
+Are there any attachment? Yes
 
-- File type
-- Hash reputation results
-- Suspicious behavior
-- Presence of macros
-- Malware indicators
 
----
 
-# URL Analysis
 
-## URLs Identified
-
-| URL | Reputation | Notes |
-|------|------|------|
-| | | |
-
-### Findings
-
-Document:
-
-- Redirect behavior
-- Domain reputation
-- Phishing indicators
-- Credential harvesting attempts
-
----
-
-# Threat Intelligence
-
-## VirusTotal
-
-### Result
-
-- Detection Ratio:
-- Community Score:
-- First Seen:
-
-### Findings
-
-Document VirusTotal findings.
-
----
-
-## Additional Sources
-
-### URLScan
-
-### AbuseIPDB
-
-### Hybrid Analysis
-
-### Any.Run
-
-Document any intelligence gathered from external sources.
-
----
-
-# Indicators of Compromise (IOCs)
-
-## IP Addresses
-
-| IOC | Type |
-|------|------|
-| | |
-
-## Domains
-
-| IOC |
-|------|
-| |
-
-## URLs
-
-| IOC |
-|------|
-| |
-
-## File Hashes
-
-| File | Hash |
-|------|------|
-| | |
-
----
-
-# Investigation Process
-
-## Step 1: Alert Review
-
-Describe actions performed.
-
-### Findings
-
----
-
-## Step 2: Email Analysis
-
-Describe actions performed.
-
-### Findings
-
----
-
-## Step 3: Attachment Analysis
-
-Describe actions performed.
-
-### Findings
-
----
-
-## Step 4: Threat Intelligence Research
-
-Describe actions performed.
-
-### Findings
-
----
-
-## Step 5: Final Assessment
-
-Describe actions performed.
-
-### Findings
-
----
-
-# MITRE ATT&CK Mapping
-
-| Technique | Description |
-|------------|-------------|
-| T1566 | Phishing |
-| T1566.001 | Spearphishing Attachment |
-| T1566.002 | Spearphishing Link |
-| T1204 | User Execution |
-
-> Include only the techniques applicable to the investigation.
-
----
-
-# Risk Assessment
-
-| Category | Assessment |
-|-----------|-----------|
-| Likelihood | Low / Medium / High |
-| Impact | Low / Medium / High |
-| Risk Level | Low / Medium / High |
-
----
-
-# Remediation Recommendations
-
-- Quarantine the email
-- Block sender address
-- Block malicious domains
-- Block malicious URLs
-- Block file hashes
-- Conduct endpoint review
-- Notify affected users
-
----
 
 # Conclusion
 
-Summarize:
+Summarize: After analysis, the alert is a true positive and the email that the user has received was malicious. The user open the malicious attachment and his system reached out to a potential C2 server and 2 DLL files were ran on the user system. We contain the user system before any more damage can take place and sent to level 2 for further investigation. Recommend to have user to go through some phishing training to he can be better equipped to spot a phishing email and know how to report it. Also we need to add the C2 site to the organizations block list so no other users can reach that site and add the file hashes to the DLP agents so they can take delete or block the email before it reaches the user. 
 
-- What happened
-- What was discovered
-- Whether the alert was malicious
-- Recommended actions
+
 
 ---
 
-# Lessons Learned
 
-Document key takeaways from the investigation.
 
-### Example
-
-- Excel 4.0 macros remain a common malware delivery technique.
-- Hash reputation checks should be combined with behavioral analysis.
-- Multiple threat-intelligence sources improve confidence in findings.
-
----
-
-# Screenshots
-
-## Alert Overview
-
-![Alert Overview](screenshots/alert-overview.png)
-
-## VirusTotal Results
-
-![VirusTotal](screenshots/virustotal-results.png)
-
-## Email Details
-
-![Email Details](screenshots/email-details.png)
-
----
-
-# Analyst
 
 **Max Metellus**
 
