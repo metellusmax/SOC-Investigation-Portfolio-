@@ -15,9 +15,7 @@ This repository contains cybersecurity investigations completed through Let's De
 
 ### Phishing Investigations
 
-1. ./Phishing/LD-001-Phishing-Attachment-Investigation
-2. ./Phishing/LD-002-Credential-Harvesting-Investigation
-3. ./Phishing/LD-003-Malicious-URL-Investigation
+1. [LD-001-Phishing-Attachment-Investigation](https://github.com/metellusmax/SOC-Investigation-Portfolio-/Phishing/LD-001: Phishing Email with Malicious Excel 4.0 Macro Attachment.md)
 
 ## Tools Used
 
@@ -26,7 +24,7 @@ This repository contains cybersecurity investigations completed through Let's De
 - AbuseIPDB
 - Wireshark
 - Splunk
-- Wazuh
+
 
 ## Author
 
